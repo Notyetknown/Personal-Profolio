@@ -1,0 +1,414 @@
+:root{
+    --text-colour : #1a1c20;
+    --link-colour : #4a76ee;
+    --backgroung-colour : #eeeff1;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--backgroung-colour);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+a{
+    color: var(--link-colour);
+    text-decoration: none;
+}
+/* Navbar*/
+/* Navbar */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: var(--backgroung-colour);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 70px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+nav .left a {
+  color: var(--text-colour);
+  font-size: 22px;
+
+  font-weight: 600;
+}
+
+.right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+   transition: transform 0.2s ease;
+}
+.right a:hover{
+    transform: translateY(-5px);
+}
+
+nav .right a {
+      transition: transform 0.2s ease;
+  color: var(--text-colour);
+  margin-left: 19px;
+}
+
+nav .right a:last-child {
+  color: var(--backgroung-colour);
+  background-color: var(--text-colour);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav .right a span {
+  margin-left: 3px;
+}
+
+/* Hero Section */
+.herosection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin: 100px 0;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+.herosection .text {
+  flex: 5;
+}
+
+.headphoto {
+  flex: 2;
+  display: flex;
+  justify-content: right;
+}
+
+.herosection .text h2 {
+  color: var(--text-colour);
+  font-size: 40px;
+}
+
+.herosection .text p {
+  color: var(--text-colour);
+}
+
+.herosection .text .links {
+  margin: 25px 0;
+}
+.herosection .text .links span{
+    margin: 10px;
+}
+
+.herosection .text .links a {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid var(--link-colour);
+  border-radius: 5px;
+  margin: 5px;
+  color: var(--link-colour);
+  transition: 0.1s;
+  transition: transform 0.2s ease;
+}
+
+.herosection .text .links a:hover {
+  transform: translateY(-5px);
+  color: var(--text-colour);
+  border-color: var(--text-colour);
+}
+
+.herosection .headphoto img {
+  border-radius: 50%;
+  width: 350px;
+}
+
+/* Skills Section */
+.Skills-Section {
+  padding: 40px 50px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.Skills-Section h2 {
+  font-size: 35px;
+}
+
+.skillsparagrah {
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #333;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Skills-Section .cells {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.Skills-Section .cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  width: 150px;
+  border: 1px solid #d3d3d3;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+  background-color: var(--backgroung-colour)
+}
+
+.Skills-Section .cell:hover {
+  transform: translateY(-5px);
+}
+
+.Skills-Section .cell img {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  padding: 8px;
+  background-color: #fff;
+}
+
+.Skills-Section .cell span {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Testimony Section */
+.Testimony-Section {
+  padding: 0 20px;
+  margin-bottom: 100px;
+}
+
+.Testimony-Section h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.Testimony-Section .gruop {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+}
+
+.Testimony-Section .gruop .persondetails {
+  text-align: center;
+  flex: 2;
+}
+
+.Testimony-Section .gruop .textTestimony {
+  flex: 8;
+  font-size: 16px;
+  color: #333;
+}
+
+.Testimony-Section .gruop .persondetails img {
+  width: 250px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.Testimony-Section .gruop .persondetails p {
+  font-weight: 600;
+}
+
+.Testimony-Section .gruop .persondetails p:last-child {
+  font-weight: normal;
+}
+
+/* Contact Section */
+.Contect-Section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.Contect-Section h2 {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.Contect-Section .groups {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.Contect-Section .groups .texts {
+  margin-top: 20px;
+  flex: 3;
+  font-size: 16px;
+  color: #333;
+}
+
+.Contect-Section .groups form {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.Contect-Section .groups form input,
+.Contect-Section .groups form textarea {
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid var(--link-colour);
+  background-color: transparent;
+  padding: 10px;
+  margin-bottom: 15px;
+  resize: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.Contect-Section .groups form button {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-color: var(--link-colour);
+  border: none;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.2s;
+   transition: transform 0.2s ease;
+}
+
+.Contect-Section .groups form button:hover {
+  filter: brightness(0.9);
+  transform: translateY(-5px);
+}
+
+/* ✅ Submit Tick Animation */
+.submit-success {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: green;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 20px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.submit-success i {
+  font-size: 22px;
+  animation: pop 0.4s ease;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.submit-success.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hidden {
+  display: none;
+}
+
+.Contact .button{
+ 
+}
+.Contact .button a:hover{
+  transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 890px) {
+  .herosection .text h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 770px) {
+  .herosection {
+    flex-direction: column-reverse;
+  }
+
+  .herosection .headphoto img {
+    width: 300px;
+  }
+
+  .Testimony-Section {
+    text-align: center;
+  }
+
+  .Testimony-Section .gruop {
+    flex-direction: column-reverse;
+  }
+
+  .Contect-Section .groups {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 540px) {
+  nav {
+    padding: 0 20px;
+  }
+
+  nav .right a {
+    font-size: 22px;
+  }
+
+  nav .right a:last-child {
+    color: var(--text-colour);
+    background-color: transparent;
+    padding: 0;
+  }
+
+  nav .right a span {
+    display: none;
+  }
+
+  .herosection {
+    padding: 0 20px;
+  }
+
+  .herosection .text h2 {
+    font-size: 30px;
+  }
+
+  .Testimony-Section {
+    padding: 0 20px;
+  }
+
+  .Contect-Section {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 446px){
+    .herosection .links{
+        align-items: center;
+        font-size: 15px;
+    }
+}
